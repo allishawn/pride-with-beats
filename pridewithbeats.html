@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIDE WITH BEATS</title>
+    <link rel="icon" href="logo.jpg">
+    <style>
+        body {
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            padding: 50px 5%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        header {
+            color: mediumpurple;
+            padding: 3rem 1.5;
+            text-align: center;
+            border-bottom: 3px solid mediumpurple;
+        }
+        .logo {
+            font-size: 25px;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            z-index: 1;
+            margin: 10px;
+            border-radius: 20px;  
+        }
+        nav a { 
+            color: black;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover,
+        nav a.active {
+            background: mediumpurple;
+            transform : scale(1.1);
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        .container {
+          flex: 400px;
+          max-width: 100%;
+          min-width: 100%;
+          background: transparent;
+          padding: 10px;
+          border-radius: 10px;
+          box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+          transition: background-color 0.3s ease, transform 0.5s ease
+        }
+        .container:hover {
+            transform: scale(1.07);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        footer {
+            text-align: center;
+        }
+        section {
+            margin: 0 auto;
+        }
+        img{
+            text-align: center;
+        }
+        @media (max-width: 992px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 0.8rem 1rem;
+                font-size: 1rem;
+            }
+            main {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            img {
+                width: 70%;
+            }
+            video {
+                width: 90%;
+            }
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 2rem 1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            section {
+                padding: 1.5rem 1rem;
+            }
+            nav {
+                margin-right: 75%;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            nav a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.95rem;
+            }
+            img {
+                width: 90%;
+            }
+            video {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OUR STORY</h1>
+        <p>Come join us while sharing our story!</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Authors' Profile</a>
+        <a href="ABOUTUS.HTML">About</a>
+        <a href="#pridewithbeats" class="active">Our Story</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section class="container">
+            <p><i>"The picture that you can see is the time when our Insructor his favorite song entitled "YOUR SONG". Little did Alliah know that this day was one of my happiest days because we sang together, in front of our classmates and our Instructor."</i><strong><i>-Shien</i></strong></p>
+            <img src="yoursong.jpg" width="200px" height="300px"> 
+            <p>In the present, we have a natural, unconscious rhythm.  Focused and in a period of time we connect with each chord and phrase as we lean into the music.  Our body language communicates ease, comprehension, and something more profound—it's a shared emotion rather than merely an act.</p><br><br>
+            <p><i>"Love is too beautiful to be hidden in a closet." – Unknown 🌈💖 </i></p>
+    </section> <br><br>
+    <section class="container">
+            <p>This was the first selfie that we ever had. We were very shy with each other back then.PS. we were not yet in a relationship at this time.</p>
+            <img src="1stpic.jpg" width="200px" height="300px" >
+            <p>Our first photo together is a straightforward but significant selfie—a moment that signifies the start of something unique—with no elaborate poses, just the two of us being naturally together and documenting the beginning of our adventure in a single image.</p>
+    </section><br><br>
+    <section class="container">
+            <p>More than just a video, our first TikTok together was a time of unadulterated joy and comfort and an indication of our developing relationship.  Not overanalyzing, just us being ourselves, having fun, feeling good, and relishing the beginning of something unique. </p>
+            <video width="640" height="360" controls>
+                <source src="first tiktok.mp4" type="video/mp4">
+            </video>        
+            <p><i>"Love is love. Full stop."It's not about fitting into boxes or labels, but about the genuine connection and affection between two people.</i></p>
+    </section><br><br>
+    <section class="container">
+            <p><i>"This is my first time Watching her playing basketball felt like finding a new favorite team—unexpected, exciting, and instantly unforgettable."</i></p>
+            <img src="basketb.jpg" width="200px " height="300px"> 
+            <p><i>"Win or lose, she's my MVP every time."</i></p>
+    </section><br><br>
+    <section class="container">
+        <p><i>Our first date at the beach was simple but perfect—barefoot walks on the sand, laughter in the breeze, and a sunset that felt like it was just for us. </i></p>
+        <img src="1stbeach.jpg" width="200px" height="300px">
+        <p><i>"Everything about that day felt easy, natural, and warm—just like being with her."</i></p>
+    </section><br><br>
+    <section class="container">
+            <p><i>The first time our hands touched, it felt like my whole world shifted—soft, simple, but full of meaning."</i></p>
+            <img src="1sthh.jpg" width="200px" height="300px">
+            <p><i>The miles that separates won't be permanentt.But our  lives will always be.</i></p>
+    </section><br><br>
+    <section class="container">
+        <p><i>"Our date at the falls was peaceful and unforgettable—the sound of rushing water, the cool mist in the air, and quiet moments shared between smiles and stolen glances. Nature surrounded us, but all I could focus on was her."</i></p>
+        <img src="fall.jpg" width="200px" height="300px">
+        <p><i>"The waterfall was breathtaking, but nothing compared to the way she looked at me."</i></p>
+    </section><br><br>
+    <section class="container">
+        <p><i>"Our second beach date felt even more special—familiar, yet full of new little moments. We laughed more, held hands longer, and watched the waves like they were dancing just for us. The ocean stayed the same, but we felt closer than ever."</i></p>
+        <img src="2ndbeach.jpg" width="200px" height="300px">
+        <p><i>"Our love is a story written with courage, and every chapter feels more beautiful than the last."</i></p>
+    </section><br><br>
+    <section class="container">
+            <p>"The video captures the carefree moments of us on the beach—laughter echoing in the wind, the sun casting its golden glow on us, and our feet sinking into the sand. Every frame is filled with joy, love, and the pure magic of being together by the ocean."</p>
+            <video width="640" height="360" controls>
+                <source src="1stbeach.mp4" type="video/mp4">
+            </video>  
+    </section><br><br>
+    <section class="container">
+            <p>"Our beach video is a collection of unforgettable moments—waves crashing, the sun setting, and us simply being present in each other’s company. Every second reminds me how beautiful it is to share simple, happy moments with the one I love."</p>
+            <video width="640" height="360" controls>
+                <source src="2ndbeach.mp4" type="video/mp4">
+            </video>        
+    </section>
+</body>
+</html>

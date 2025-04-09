@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="logo.jpg">
+    <style> 
+        body {
+            background: linear-gradient(to bottom right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 5%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover,
+        nav a.active {
+            background-color: #FFD700;
+            color: black;
+            transform: scale(1.1);
+        }
+        section.home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 5%;
+            height: calc(100vh - 120px);
+            gap: 50px;
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+        .home-detail {
+            max-width: 600px;
+        }
+        .home-detail h1 {
+            font-size: 48px;
+            color: mediumorchid;
+            line-height: 1.2;
+        }
+        .home-detail p {
+            font-size: 20px;
+            margin-top: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        @media (max-width: 992px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 0.8rem 1rem;
+                font-size: 1rem;
+            }
+            img {
+                width: 70%;
+            }
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 2rem 1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            section {
+                padding: 1.5rem 1rem;
+            }
+            nav {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            nav a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.95rem;
+            }
+            img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <img src="logo.jpg" width="200px" height="200px">
+            
+            <nav>
+                <a href="#Home" class="active">Home</a>
+                <a href="about.html">Authors' Profile</a>
+                <a href="contact.html">Contact</a>
+                <a href="pridewithbeats.html">Our Story</a>
+                <a href="ABOUTUS.HTML">About</a>
+            </nav>
+        </header>
+        
+        <section class="home">
+            <div class="home-detail">
+            <h1>Pride with Beats </h1>
+            <p>A blog where you can be yourself. Join us as we tell our own story <br> that can be relatable to the members of the LGBT Community!</p>
+        </section>
+
+</body>
+</html>

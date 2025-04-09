@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT SHIEN</title>
+    <link rel="icon" href="logo.jpg">
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            z-index: 0;           
+        }
+        body {
+            background: linear-gradient(to bottom right, #c21111, #d8730e, #b3b31c, #13d313, #0000FF, #4B0082, #7e0dda);
+            padding: 50px 5%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            color: white;
+        }
+        header {
+            color:white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 3px solid #FFD700;
+        }
+        .logo {
+            font-size: 25px;
+            color: #f8fcf8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.6);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            z-index: 1;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        nav a { 
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.3);
+            color: #eef105;
+            transform : scale(1.1);
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease, transform 0.5s ease;
+            margin-bottom: 20px;
+        }
+        .container:hover {
+            transform: scale(1.07);
+        }
+        iframe {
+            border-radius: 10px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+        }
+        section {
+            margin: 0 auto;
+            text-align: center;
+        }
+        img {
+            border-radius: 50%;
+            border: 5px solid #FFD700;
+            margin-bottom: 20px;
+        }
+        h1, h2{
+            color: #edfad7;
+        }
+        details summary {
+            color: #FFD700;
+            cursor: pointer;
+        }
+        details summary:hover {
+            color: #4B0082;
+        }
+        @media (max-width: 992px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 0.8rem 1rem;
+                font-size: 1rem;
+            }
+            main {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            img {
+                width: 70%;
+            }
+            video {
+                width: 90%;
+            }
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 2rem 1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            section {
+                padding: 1.5rem 1rem;
+            }
+            nav {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            nav a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.95rem;
+            }
+            img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">PROFILE</a>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ABOUTUS.HTML">About</a>
+        <a href="#achievements">More About Me</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section class="container">
+            <h1>I am Maryshien Villaluz</h1>
+            <img src="shawn.jpg" alt="Shawn" width="200px" height="200px" style="text-align: center;">
+            <p>DOB: SEPTEMBER 02, 2005</p>
+            <p>Age: 19 years old</p>
+            <p>Address: GK, Budlaan Cebu City</p>
+            <p>Father's Name: Venancio Villaluz</p>
+            <p>Mother's Name: Rebecca Villaluz</p>
+            <p>Hobbies: Playing Basketball</p>
+            <p>Primary School:Talamban Elementary School</p>
+            <p>Secondary School:Talamban National High School</p>
+            <p>Tertiary School: Cebu Eastern College Inc. (Currently a 1st Year Student)</p>
+        </section><br><br>
+        <section class="container"> <h2 id="achievements"></h2>
+            <article>
+            <h1>My Achievements</h1>
+            <p>I won in Cebu City Olympics and held as the MVP in Basketball Women Category...</p>
+            </article>
+            <article>
+                <h1>More About Me</h1>
+            <p>I was in a Sport's Section back when I was in High School...</p>
+            <p>I worked in my sister's Silogan Business...</p>
+            </article>
+        </section> <br>br
+        <section class="container">
+            <h1>This is the video I always watch</h1>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/vaJf4owiO-w?si=XfcWZySFU7DpyIGh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section><br>
+        <section class="container">
+            <h1>The Map of the School where I study</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.591846881394!2d123.89344197321701!3d10.29443288982653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742232522347!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section> <br>
+        <section class="container">
+                <h2>Here are the list of My Favorite Emojis</h2>
+                <details>
+                    <summary>Check this Out....</summary>
+                    <ul>
+                        <li>&#x1F600;</li>
+                        <li>&#x1F48B;</li>
+                        <li>&#x1F926;</li>
+                        <li>&#x1F47B;</li>
+                    </ul>
+                </details>
+
+        </section>
+    </main>
+    <footer>
+        &copy; PRIDE WITH BEATS. All Rights Reserved. 2025 &trade;
+    </footer>
+</body>
+</html>

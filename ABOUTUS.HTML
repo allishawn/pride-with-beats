@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT SECTION</title>
+    <link rel="icon" href="logo.jpg">
+    <style>           
+        body {
+            background: linear-gradient(to bottom right, #c21111, #d8730e, #b3b31c, #13d313, #0000FF, #4B0082, #7e0dda);
+            padding: 50px 5%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            color: white;
+        }
+        header {
+            color:white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 3px solid #FFD700;
+        }
+        .logo {
+            font-size: 25px;
+            color: #f8fcf8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.6);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            z-index: 1;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        nav a { 
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover,
+        nav a.active {
+            background: rgba(0, 0, 0, 0.3);
+            color: #eef105;
+            transform : scale(1.1);
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease, transform 0.5s ease;
+            margin-bottom: 20px;
+        }
+        .container:hover {
+            transform: scale(1.07);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+        }
+        section {
+            margin: 0 auto;
+            text-align: center;
+        }
+        @media (max-width: 992px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 0.8rem 1rem;
+                font-size: 1rem;
+            }
+            main {
+                flex-direction: column;
+                padding: 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 2rem 1rem;
+            }
+            section {
+                padding: 1.5rem 1rem;
+            }
+            nav {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            nav a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><a href="#" class="logo">OUR MISSION</a></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Authors' Profile</a>
+        <a href="#aboutus" class="active">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section class="container">
+            <p>Our mission goes beyond fashion — we aim to be a voice, a platform, and a movement that empowers individuals to embrace their truth and live it out loud. We believe that everyone deserves the freedom to express who they are without fear of judgment, rejection, or discrimination. We know that coming out is not always easy — it’s personal, it’s brave, and it takes strength. That’s why we strive to create a safe, inclusive space where you’re not just accepted, but celebrated. Through our designs, our messages, and our community, we encourage LGBTQ+ individuals to break free from the closet and step into the light of authenticity. Whether you're out, closeted, questioning, or just beginning your journey, <strong>Pride with Beats</strong> is here to walk beside you — reminding you that your identity is valid, your story matters, and your presence makes this world more beautiful. We believe that fashion is more than clothing — it's a form of expression, a statement of identity, and a tool for liberation. And with every piece we create, we aim to send a message of pride, courage, and love: Be bold. Be seen. Be you. 🌈</p>
+        </section>
+    </main>
+    <footer>&copy; PRIDE WITH BEATS. All Rights Reserved. 2025 &trade;</footer>
+</body>
+</html>
